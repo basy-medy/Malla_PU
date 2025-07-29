@@ -90,6 +90,8 @@ yarn run deploy
 
 - [Flowbite](https://flowbite.com/)
 - [Google Fonts](https://fonts.google.com/)
+- [Malla Interactiva UC](https://github.com/loretito/malla-interactiva-uc)
+- [Astro UC Malla](https://github.com/jj-sm/Astro-UC-Malla)
 
 ## Contact
 
