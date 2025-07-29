@@ -12,6 +12,7 @@
 </div>
 
 <details>
+
 <summary>Table of Contents</summary>
   <ol>
     <li>
@@ -27,23 +28,17 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributions">Contributions</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
     <li><a href="#contact">Contact</a>
-        <ul>
-        <li><a href="#support-me">Support Me</a></li>
-      </ul>
-    </li>
 
-  </ol>
+</ol>
 </details>
 
 ## About The Project
 
 ![malla-interactiva](public/readme/malla.png)
 
-This is an app that has an interactive university curriculum for the degree in speech-language pathology (fonoaudiología) at UC
+This is an app that has an interactive university curriculum for the bachelors of Urban Planingn with the adition of the master degree at UC.
 
 ### Built With
 
@@ -88,34 +83,8 @@ yarn dev
 4. Build for production
 
 ```bash
-yarn build
+yarn run deploy
 ```
-
-## Roadmap
-
-- [x] Select/Unselect a course
-- [x] Select/Unselect by semestrer
-- [x] Select/Unselect by year
-- [x] Unlock courses as prerequisites are met
-- [x] Display the percentage of approved courses/credits
-- [x] Switch between the old and new university curriculum
-- [x] Store selections in localStorage
-
-## Contributions
-
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the following tags:
-
-- `bug` (for reporting errors or bugs in the code)
-- `enhancement` (for suggesting new features or improvements to existing functionality)
-- `documentation` (for issues related to the project's documentation)
-- `question` (for asking questions)
-
-Follow thw steps bellow to contribute:
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/FeaturesName`)
-3. Commit the Changes (`git commit -m "Add some FeatureName`)
-4. Push to the Branch (`git push origin feature/FeaturesName`)
 
 ## Acknowledgments
 
@@ -124,12 +93,4 @@ Follow thw steps bellow to contribute:
 
 ## Contact
 
-Loreto Ñancucheo - [@loretonancucheo](https://twitter.com/loretonancucheo) - loreto.nancucheo@gmail.com
-
-### Support Me
-
-<a href='https://www.buymeacoffee.com/loretonancucheo' target="_blank"><img src='https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png' height='45' alt='buymeacoffe-loreto'/></a>
-
-Don't forget to give the project a star!
-
-Thanks :heart:
+Bastián Medina - [@basy_medy](https://t.me/basy_medy) - basty.medy@gmail.com

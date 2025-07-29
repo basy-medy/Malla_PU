@@ -1,4 +1,4 @@
-import { Button, Navbar, Footer, Stats, Info, Malla } from "./components";
+import { Button, Navbar, Footer, Stats, Info, Malla, Welcome } from "./components";
 
 function App() {
   return (
@@ -6,6 +6,7 @@ function App() {
       <Navbar />
       <div className="max-w-screen-xl mx-auto">
         <Button />
+        <Welcome />
         <Stats />
       </div>
       <Malla />

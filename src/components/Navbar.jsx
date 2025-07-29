@@ -14,7 +14,7 @@ export const Navbar = () => {
     <nav className="border-gray-200 bg-gray-50 dark:bg-gray-800 dark:border-gray-700 mb-2">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-1">
         <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white sm:flex ">
-          <p className="mr-2">Fonoaudiología UC: </p>
+          <p className="mr-2">Planificación Urbana UC: </p>
           <p> {title}</p>
         </span>
 

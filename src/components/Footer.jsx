@@ -8,13 +8,16 @@ export const Footer = () => {
         onClick={() => window.open("https://github.com/loretito", "_black")}
       >
         <p>
-          created by <span className="font-bold"> loretito</span>
+          Forked from <span className="font-bold"> loretito</span>
         </p>
-        <img
-          src="/github.svg"
-          alt="github logo"
-          className="w-5"
-        />
+      </div>
+      <div
+        className="flex hover:cursor-pointer text-[#BDBDBD]"
+        onClick={() => window.open("https://github.com/basy-medy", "_black")}
+      >
+        <p>
+          .  Adapted by <span className="font-bold"> basy-medy</span>
+        </p>
       </div>
     </div>
   );

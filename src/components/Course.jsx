@@ -24,10 +24,7 @@ export const Course = ({ course }) => {
   }, [finishedCourses]);
 
   const isFinished = finishedCourses.includes(course.id);
-  let color = "bg-[#F0F0F0]";
-  if (course.cc === "bg-[#CCDFF6]") {
-    color = "bg-[#CCDFF6]";
-  }
+  const color = course.cc || "bg-[#F0F0F0]";
 
   return (
     <div
@@ -49,11 +46,11 @@ export const Course = ({ course }) => {
       </div>
       <div className="flex justify-between p-1">
         <div className="flex justify-start">
-          {course.req.map(r => (
+          {/* {course.req.map(r => (
             <div key={r.id} className={`course-code ${color} mx-0 border`}>
-              <p className="text-xs">{r.id}</p>
+              <p className="text-xs">{"p" + r.id}</p>
             </div>
-          ))}
+          ))} */}
         </div>
         <div className="flex items-center justify-center">
           {/* creditos */}
