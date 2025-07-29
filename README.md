@@ -2,14 +2,12 @@
 
 <div align="center">
   <p align="center">
-    <a href="https://malla-interactiva-fono.netlify.app/" target="_blank">Demo</a>
+    <a href="https://basy-medy.github.io/Malla_PU/" target="_blank">Demo</a>
     ·
     <!--  
     <a href="#" target="_blank">Video</a>
     · -->
-    <a href="https://github.com/loretito/malla-interactiva-uc" target="_blank">Code</a>
-  </p>
-</div>
+    <a href="https://github.com/basy-medy/Malla_PU/
 
 <details>
 
