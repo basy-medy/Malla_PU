@@ -63,7 +63,7 @@ export const Info = () => {
                     <tr>
                         <td className="w-50">
                             <span className={`w-4 h-4 mr-3 ${IEU} rounded-full inline-block`}></span>
-                            <span className={`w-4 h-4 mr-3 ${IEU32} rounded-full inline-block`}></span>q
+                            <span className={`w-4 h-4 mr-3 ${IEU32} rounded-full inline-block`}></span>
                         </td>
                         <td>Naranjas: Ramos de Carrera</td>
                     </tr>
@@ -79,18 +79,31 @@ export const Info = () => {
                             <span className={`w-4 h-4 mr-3 ${OPR32} rounded-full inline-block`}></span>
                         </td>
                         <td>Cafes: Optativos (OPRs)</td>
+                    <tr>
+                        <td className="w-50">
+                            <span className={`w-4 h-4 mr-3 ${MAT} rounded-full inline-block`}></span>
+                            <span className={`w-4 h-4 mr-3 ${EAE} rounded-full inline-block`}></span>
+                            <span className={`w-4 h-4 mr-3 ${PSI} rounded-full inline-block`}></span>
+                            <span className={`w-4 h-4 mr-3 ${IHI} rounded-full inline-block`}></span> <br />
+                            <span className={`w-4 h-4 mr-3 ${ANT} rounded-full inline-block`}></span>
+                            <span className={`w-4 h-4 mr-3 ${GEO} rounded-full inline-block`}></span>
+                            <span className={`w-4 h-4 mr-3 ${SOL} rounded-full inline-block`}></span>
+                            <span className={`w-4 h-4 mr-3 ${ICP} rounded-full inline-block`}></span> 
+                        </td>
+                        <td>Mínimos College Sociales</td>
+                    </tr>
                     </tr>
                     <tr>
                         <td className="w-50">
                             <span className={`w-4 h-4 mr-3 ${VRA} rounded-full inline-block`}></span>
                         </td>
-                        <td>Verdes: Mínimos Licenciatura  (VRA)</td>
+                        <td>Verdes: Mínimos Licenciatura (VRA)</td>
                     </tr>
                     <tr>
                         <td className="w-50">
                             <span className={`w-4 h-4 mr-3 ${CLG} rounded-full inline-block`}></span>
                         </td>
-                        <td>College: Ramos de College para tomar major(OFGs)</td>
+                        <td>Verde claro: Ramos de College para tomar major</td>
                     </tr>
                     </tbody>
                 </table>
