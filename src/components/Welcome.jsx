@@ -6,11 +6,10 @@ export const Welcome = () => {
             <div className="flex items-center">
                 <div className="w-auto text-justify mr-10 ml-10 mb-5">
                     <span className="text-blue-600 font-bold">Malla Planificación Urbana UC</span> se trata de una herramienta creada en
-                    <span className="italic"> base</span> a projectos de malla para los estudiantes de las carreras de <a href="https://malla-interactiva-fono.netlify.app/" target="_blank" rel="noopener noreferrer">
-                    <span className="font-bold">Licenciatura</span></a> en
-                    <span className="font-semibold"> Astronomía</span> y <span className="font-semibold">Física </span>, así como para la carrera de 
-                    <a href="https://puc.jjsm.uk/Astro-UC-Malla/" target="_blank" rel="noopener noreferrer">
-                    <span className="font-bold"> Fonoaudiología</span></a> de la UC (Pontificia Universidad Católica de Chile). La herramienta permite visualizar de manera más
+                    <span className="italic"> base</span> a projectos de malla para los estudiantes de las carreras de <a href="https://puc.jjsm.uk/Astro-UC-Malla/" target="_blank" rel="noopener noreferrer">
+                    Licenciatura</a> de
+                    <span className="font-semibold"> Astronomía</span> y <span className="font-semibold">Física</span>, así como para la carrera de&nbsp;
+                    <a href="https://malla-interactiva-fono.netlify.app/" target="_blank" rel="noopener noreferrer">Fonoaudiología</a> de la UC (Pontificia Universidad Católica de Chile). La herramienta permite visualizar de manera más
                     clara y sencilla los ramos de cada carrera y sus respectivos currículums.
                     <br/>
                     <br/>

@@ -30,3 +30,8 @@
   transform: rotate(35deg); 
 
 }
+a {
+  font-weight: bold;
+  text-decoration: underline;
+  color: blue; /* Or inherit if you want browser default */
+}
