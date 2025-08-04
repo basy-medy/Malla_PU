@@ -1,9 +1,11 @@
 import React, { useContext, useEffect, useState } from "react";
 import { CourseContext } from "../context/CourseContext";
+import { OptativosContext } from "../context/OptativosContext";
 
 export const Course = ({ course }) => {
   const { finishedCourses, totalCredits, handleClick } =
     useContext(CourseContext);
+  const { openEditModal } = useContext(OptativosContext);
 
   const [takeCourse, setTakeCourse] = useState(false);
 
@@ -25,13 +27,33 @@ export const Course = ({ course }) => {
 
   const isFinished = finishedCourses.includes(course.id);
   const color = course.cc || "bg-[#F0F0F0]";
+  const isCustomOptativo = course.isCustom;
+
+  const handleRightClick = (e) => {
+    if (isCustomOptativo) {
+      e.preventDefault();
+      openEditModal(course);
+    }
+  };
+
+  const handleDoubleClick = (e) => {
+    if (isCustomOptativo) {
+      e.preventDefault();
+      openEditModal(course);
+    }
+  };
 
   return (
     <div
       className={`w-32 bg-gray-600 mb-2 rounded-lg hover:cursor-pointer ${
         isFinished ? "custom-line" : ""
-      } ${!takeCourse ? "opacity-25" : ""} mx-1`}
+      } ${!takeCourse ? "opacity-25" : ""} mx-1 ${
+        isCustomOptativo ? "ring-2 ring-blue-300" : ""
+      }`}
       onClick={() => handleClick(course)}
+      onContextMenu={handleRightClick}
+      onDoubleClick={handleDoubleClick}
+      title={isCustomOptativo ? "Click derecho o doble click para editar" : ""}
     >
       <div className="flex justify-between items-center h-6">
         <p className="text-white font-bold text-xs pl-1">{course.code}</p>
@@ -40,9 +62,14 @@ export const Course = ({ course }) => {
         </div>
       </div>
       <div
-        className={`${color} h-12 flex justify-center items-center text-center w-full `}
+        className={`${color} h-12 flex justify-center items-center text-center w-full ${
+          isCustomOptativo ? "relative" : ""
+        }`}
       >
         <p className="line-clamp text-sm">{course.course}</p>
+        {isCustomOptativo && (
+          <div className="absolute top-0 right-0 w-2 h-2 bg-blue-500 rounded-full"></div>
+        )}
       </div>
       <div className="flex justify-between p-1">
         <div className="flex justify-start">

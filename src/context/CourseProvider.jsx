@@ -8,14 +8,15 @@ const storedFinishedCourses =
 const credits = JSON.parse(localStorage.getItem("credits")) || 0;
 const stored = JSON.parse(localStorage.getItem("stored")) || "Malla Nueva";
 
-export const CourseProvider = ({ children }) => {
+export const CourseProvider = ({ children, customOptativos = [] }) => {
   //set info from localStorage
   const [finishedCourses, setFinishedCourses] = useState(storedFinishedCourses);
   const [totalCredits, setTotalCredits] = useState(credits);
   const [title, setTitle] = useState(stored);
 
-  // use malla selected
-  const data = title === "Malla Nueva" ? ramos2023 : ramos2016;
+  // use malla selected and merge with custom optativos
+  const baseMalla = title === "Malla Nueva" ? ramos2023 : ramos2016;
+  const data = [...baseMalla, ...customOptativos];
 
   // divide courses by semester
   const coursesBySemesterAndYear = data.reduce((acc, course) => {
