@@ -1,4 +1,4 @@
-import { Button, Navbar, Footer, Stats, Info, Malla, Welcome } from "./components";
+import { Button, Navbar, Footer, Stats, Info, Malla, Welcome, EditCourseModal } from "./components";
 
 function App() {
   return (
@@ -12,6 +12,7 @@ function App() {
       <Malla />
       <Info />
       <Footer />
+      <EditCourseModal />
     </>
   );
 }

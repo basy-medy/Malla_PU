@@ -7,3 +7,4 @@ export * from "./Stats";
 export * from "./Info";
 export * from "./Malla";
 export * from "./Welcome";
+export * from "./EditCourseModal";
