@@ -72,6 +72,18 @@ export const Navbar = () => {
                 Malla antigua
               </div>
             </li>
+            <li>
+              <div
+                className="block py-2 pl-3 pr-4 text-gray-900 rounded hover:bg-gray-100 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white"
+                onClick={() => {
+                  setTitle("Malla Directa");
+                  toggleMenu();
+                  handleReset();
+                }}
+              >
+                Malla Directa
+              </div>
+            </li>
           </ul>
         </div>
       </div>

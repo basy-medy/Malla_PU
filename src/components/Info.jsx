@@ -30,11 +30,17 @@ import {
     FIL,
     OFG,
     IEU32,
-    OPR32
+    OPR32,
+    TALLER,
+    TEORICO,
+    HERRAMIENTAS,
+    CAMINO,
+    HABILITACION
 } from "../utils/colors";
 
 export const Info = () => {
-    const { boolViewSigla } = useContext(CourseContext);
+    const { boolViewSigla, title } = useContext(CourseContext);
+    const isDirecta = title === "Malla Directa";
 
     return (
         <div className="flex my-4 items-center justify-center flex-col mx-5">
@@ -58,6 +64,48 @@ export const Info = () => {
                 </div>
             </div>
             <div className="w-50 left-2 mt-3 mr-3">
+                {isDirecta ? (
+                <table className="table-auto w-90">
+                    <tbody>
+                    <tr>
+                        <td className="w-50">
+                            <span className={`w-4 h-4 mr-3 ${TALLER} rounded-full inline-block`}></span>
+                        </td>
+                        <td>Rosa: Aprende haciendo / Cursos de taller y aplicación del conocimiento</td>
+                    </tr>
+                    <tr>
+                        <td className="w-50">
+                            <span className={`w-4 h-4 mr-3 ${TEORICO} rounded-full inline-block`}></span>
+                        </td>
+                        <td>Azul oscuro: Fundamentos de la ciudad / Cursos teóricos</td>
+                    </tr>
+                    <tr>
+                        <td className="w-50">
+                            <span className={`w-4 h-4 mr-3 ${HERRAMIENTAS} rounded-full inline-block`}></span>
+                        </td>
+                        <td>Azul: Caja de herramientas / Cursos instrumentales y metodológicos</td>
+                    </tr>
+                    <tr>
+                        <td className="w-50">
+                            <span className={`w-4 h-4 mr-3 ${CAMINO} rounded-full inline-block`}></span>
+                        </td>
+                        <td>Celeste: Construye tu propio camino / Cursos optativos de profundización</td>
+                    </tr>
+                    <tr>
+                        <td className="w-50">
+                            <span className={`w-4 h-4 mr-3 ${HABILITACION} rounded-full inline-block`}></span>
+                        </td>
+                        <td>Gris: Cursos de Habilitación Profesional</td>
+                    </tr>
+                    <tr>
+                        <td className="w-50">
+                            <span className={`w-4 h-4 mr-3 ${VRA} rounded-full inline-block`}></span>
+                        </td>
+                        <td>Verde: Cursos requeridos por la VRA</td>
+                    </tr>
+                    </tbody>
+                </table>
+                ) : (
                 <table className="table-auto w-90">
                     <tbody>
                     <tr>
@@ -107,6 +155,7 @@ export const Info = () => {
                     </tr>
                     </tbody>
                 </table>
+                )}
             </div>
         </div>
     );

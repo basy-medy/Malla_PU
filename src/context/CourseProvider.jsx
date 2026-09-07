@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { CourseContext } from "./CourseContext";
-import { ramos2016, ramos2023 } from "../utils";
+import { ramos2016, ramos2023, ramosDirecta } from "../utils";
 
 //get info from localStorage
 const storedFinishedCourses =
@@ -15,7 +15,12 @@ export const CourseProvider = ({ children }) => {
   const [title, setTitle] = useState(stored);
 
   // use malla selected
-  const data = title === "Malla Nueva" ? ramos2023 : ramos2016;
+  const data =
+    title === "Malla Nueva"
+      ? ramos2023
+      : title === "Malla Directa"
+      ? ramosDirecta
+      : ramos2016;
 
   // divide courses by semester
   const coursesBySemesterAndYear = data.reduce((acc, course) => {

@@ -28,6 +28,11 @@ const OFG = "bg-[#fffdb8]";
 const ELE = "bg-[#fffdb8]";
 const TEO = "bg-[#fffdb8]";
 const FIL = "bg-[#fffdb8]";
+const TALLER = "bg-[#ff9aa8]";
+const TEORICO = "bg-[#8fa4c8]";
+const HERRAMIENTAS = "bg-[#64b5f6]";
+const CAMINO = "bg-[#d6e8f8]";
+const HABILITACION = "bg-[#cfd3dc]";
 
 export {
   VRA,
@@ -59,5 +64,10 @@ export {
   OFG,
   ELE,
   TEO,
-  FIL
+  FIL,
+  TALLER,
+  TEORICO,
+  HERRAMIENTAS,
+  CAMINO,
+  HABILITACION
 };

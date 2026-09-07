@@ -2,10 +2,12 @@ import React, { useContext } from "react";
 import { CourseContext } from "../context/CourseContext";
 
 export const Stats = () => {
-  const { totalCredits, finishedCourses } = useContext(CourseContext);
+  const { totalCredits, finishedCourses, title } = useContext(CourseContext);
 
-  const creditsPercentage = ((totalCredits * 100) / 565).toFixed(1);
-  const approvedCoursesPercentage = (finishedCourses.length * 100) / 60;
+  const maxCredits = title === "Malla Directa" ? 505 : 565;
+  const maxCourses = title === "Malla Directa" ? 49 : 60;
+  const creditsPercentage = ((totalCredits * 100) / maxCredits).toFixed(1);
+  const approvedCoursesPercentage = (finishedCourses.length * 100) / maxCourses;
 
   return (
     <div className="w-full py-4">
